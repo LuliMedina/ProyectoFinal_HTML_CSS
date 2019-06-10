@@ -1,0 +1,18 @@
+#about {
+	display: inline-block;
+	overflow: auto;
+	background-color: $colorFondo;
+
+	h3 {
+		color: $colorPrincipal;
+		font-size: $tamanioTitulos;
+		text-align: center;
+		font-family: $fuentePrincipal;
+		margin-bottom: 30px;
+	}
+
+	img {
+		float: right;
+		margin-left: 20px;
+	}
+}

@@ -1,0 +1,36 @@
+header {
+	background-color: $colorFondo;
+	h1 {
+		display: inline-block;
+		position: fixed;
+		width: 20px;
+		z-index: 4;
+		display: block;
+	}
+	.nav {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: stretch;
+		padding-top: 20px;
+
+		li {
+			display: inline-block;
+			margin: auto;
+			padding: 40px 10px;
+
+			a {
+				color: $colorPrincipal;
+				font-size: $tamanioNav;
+				font-weight: bolder;
+				letter-spacing: 2px;
+				padding: 0 40px;
+				transition: color;
+			}
+
+			a:hover {
+				color: #fde94c;
+			}
+		}
+	}
+}

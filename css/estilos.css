@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-family: "Noto Sans", sans-serif; }
+
+.contenedor {
+  width: 80%;
+  margin: auto; }
+
+@font-face {
+  font-family: "Subway-Black";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Subway-Black"), url("css/typo/Subway-Black.eot") format("embedded-opentype"), url("css/typo/Subway-Black.woff") format("woff"), url("css/typo/Subway-Black.svg") format("svg"); }
+
+header {
+  background-color: #eecfc9; }
+  header h1 {
+    display: inline-block;
+    position: fixed;
+    width: 20px;
+    z-index: 4;
+    display: block; }
+  header .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 20px; }
+    header .nav li {
+      display: inline-block;
+      margin: auto;
+      padding: 40px 10px; }
+      header .nav li a {
+        color: #d2564c;
+        font-size: 12px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        padding: 0 40px;
+        transition: color; }
+      header .nav li a:hover {
+        color: #fde94c; }
+
+#quote {
+  background-color: #eecfc9; }
+  #quote h2 {
+    text-align: center;
+    font-family: "Subway-Black";
+    font-size: 80px;
+    color: #d2564c;
+    padding: 160px 0px 160px 0px;
+    font-weight: inherit;
+    letter-spacing: 2px; }
+
+#about {
+  display: inline-block;
+  overflow: auto;
+  background-color: #eecfc9; }
+  #about h3 {
+    color: #d2564c;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 30px; }
+  #about img {
+    float: right;
+    margin-left: 20px; }

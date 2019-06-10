@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-size: 12px;
+	font-family: $fuentePrincipal;
+}
+
+.contenedor {
+	width: 80%;
+	margin: auto;
+}
+
+@font-face {
+	font-family: "Subway-Black";
+	font-weight: normal;
+	font-style: normal;
+	src: local("Subway-Black"),
+		url("css/typo/Subway-Black.eot") format("embedded-opentype"),
+		url("css/typo/Subway-Black.woff") format("woff"),
+		url("css/typo/Subway-Black.svg") format("svg");
+}
