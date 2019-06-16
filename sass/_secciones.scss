@@ -1,6 +1,4 @@
-#about {
-	display: inline-block;
-	overflow: auto;
+#seccionAbout {
 	background-color: $colorFondo;
 
 	h3 {
@@ -9,10 +7,5 @@
 		text-align: center;
 		font-family: $fuentePrincipal;
 		margin-bottom: 30px;
-	}
-
-	img {
-		float: right;
-		margin-left: 20px;
 	}
 }
