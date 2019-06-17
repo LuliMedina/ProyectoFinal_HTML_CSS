@@ -73,5 +73,14 @@ footer {
 				}
 			}
 		}
+
+		#credits {
+			color: rgb(151, 151, 151);
+			font-family: $fuentePrincipal;
+			line-height: $altoLineaParrafos;
+			text-align: center;
+			font-size: 11px;
+			padding: 10px 0;
+		}
 	} /*cierra contenedor*/
 } /*cierra footer*/
