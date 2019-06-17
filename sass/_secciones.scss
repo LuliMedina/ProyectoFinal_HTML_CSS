@@ -1,11 +1,104 @@
 #seccionAbout {
 	background-color: $colorFondo;
+	padding: 120px 0;
+	overflow: auto;
 
 	h3 {
+		@extend %h3;
+		color: $colorAmarillo;
+		padding-top: 70px;
+	}
+
+	p {
+		@extend %p;
+	}
+
+	img {
+		float: right;
+		margin: 0 130px 0 20px;
+		transition: all 1s;
+	}
+
+	img:hover {
+		filter: opacity(0.8);
+	}
+
+	.boton {
+		@extend %boton;
+		margin: 30px 0 0 360px;
+		transition: background;
+		transition: color;
+	}
+
+	.boton:hover {
+		background: $colorAmarillo;
+		color: $colorFondo;
+	}
+}
+
+#seccionMusic {
+	background-color: $colorFondo;
+	overflow: auto;
+	padding: 0 0 30px 0;
+
+	h3 {
+		@extend %h3;
+		color: $colorNaranja;
+		padding-top: 70px;
+		text-align: left;
+	}
+
+	p {
+		@extend %p;
+		text-align: left;
+	}
+
+	img {
+		float: left;
+		margin-right: 20px;
+		transition: all 1s;
+	}
+
+	img:hover {
+		filter: opacity(0.8);
+	}
+
+	.boton {
+		@extend %boton;
+		border: 2px solid $colorNaranja;
+		padding: 10px 25px;
+		transition: background;
+		transition: color;
+	}
+
+	.boton:hover {
+		background: $colorNaranja;
+		color: $colorFondo;
+	}
+}
+
+#seccionFrase {
+	background-color: $colorFondo;
+	padding: 140px 80px 90px;
+	p {
 		color: $colorPrincipal;
-		font-size: $tamanioTitulos;
+		line-height: $altoLineaParrafos;
 		text-align: center;
-		font-family: $fuentePrincipal;
-		margin-bottom: 30px;
+		font-size: 30px;
+
+		span {
+			color: $colorPrincipal;
+			line-height: $altoLineaParrafos;
+			font-weight: bold;
+			text-align: center;
+			font-size: 30px;
+		}
+	}
+	h4 {
+		color: $colorAmarillo;
+		line-height: 260%;
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 2px;
 	}
 }

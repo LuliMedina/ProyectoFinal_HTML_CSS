@@ -10,6 +10,12 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/estilos.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
 		<header>
@@ -39,6 +45,7 @@
 
 		<section id="seccionAbout">
 			<div class="contenedor">
+				<img src="css/imagenes/aboutsigrid.png" alt="About Sigrid" />
 				<h3>who am i</h3>
 				<p>
 					I born in Ålesund on 5 September 1996. I have an older
@@ -48,19 +55,18 @@
 					started a band called Sala Says Mhyp, which was named after
 					our late cat, Sala.
 				</p>
-				<img src="http://fillmurray.com/350/350" alt="About Sigrid" />
-				<a href="#">GET TO KNOW ME</a>
+				<a href="#" class="boton">GET TO KNOW ME</a>
 			</div>
 		</section>
-		<!-- 
+
 		<section id="seccionMusic">
 			<div class="contenedor">
+				<img src="css/imagenes/musicsigrid.png" alt="Music Sigrid" />
 				<h3>what i do</h3>
 				<p>
 					I love music. So I do music.
 				</p>
-				<img src="http://fillmurray.com/350/350" alt="About Sigrid" />
-				<a href="#">LET'S PLAY</a>
+				<a href="#" class="boton">LET THE MUSIC TAKE CONTROL</a>
 			</div>
 		</section>
 
@@ -71,10 +77,79 @@
 					private and what’s not private is just very blurry at the
 					moment. For everyone. But it is very important to me that I
 					have things that I don’t need to talk about. And you know, I
-					guess it’s good to just have something for myself.”
+					guess
+					<span> it’s good to just have something for myself</span>."
 				</p>
+				<h4 class="firmaSigrid">[Sigrid]</h4>
 			</div>
 		</section>
-		-->
+
+		<section id="contacto">
+			<div class="contenedor">
+				<p>
+					[ Subscribe to our newsletter to get notified about shows
+					and latest news ]
+				</p>
+
+				<form action="#" method="POST">
+					<input
+						type="text"
+						name="nombre"
+						placeholder=" your name"
+						required
+					/>
+					<input
+						type="email"
+						name="email"
+						placeholder="your email"
+						required
+					/>
+					<input type="submit" value="SEND" />
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="contenedor">
+				<section id="paginas">
+					<nav>
+						<ul>
+							<li><a href="#">Shows</a></li>
+							<li><a href="#">Music</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</nav>
+				</section>
+				<section id="socialmedia">
+					<ul>
+						<li>
+							<a
+								href="https://www.instagram.com/thisissigrid/?hl=en"
+								target="_blank"
+								><i class="fab fa-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://open.spotify.com/artist/4TrraAsitQKl821DQY42cZ"
+								target="_blank"
+								><i class="fab fa-spotify"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/channel/UCLG7twDweqlHpyv0EDOjrgw"
+								target="_blank"
+								><i class="fab fa-youtube"></i
+							></a>
+						</li>
+					</ul>
+				</section>
+				<section id="quotefooter">
+					<p>high</p>
+					<p>five</p>
+				</section>
+			</div>
+		</footer>
 	</body>
 </html>

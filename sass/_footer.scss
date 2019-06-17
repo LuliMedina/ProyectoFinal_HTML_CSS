@@ -1,0 +1,77 @@
+footer {
+	background-color: $colorFondo;
+	.contenedor {
+		display: -ms-grid;
+		display: flex;
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		padding: 50px 20px;
+
+		#paginas {
+			a {
+				color: $colorSecundario;
+				font-family: $fuentePrincipal;
+				line-height: 170%;
+				text-align: left;
+				font-weight: bolder;
+				letter-spacing: 1px;
+				font-size: 14px;
+				transition: color;
+			}
+			a:hover {
+				color: $colorPrincipal;
+			}
+		}
+
+		#socialmedia {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			ul {
+				display: flex;
+				flex-wrap: nowrap;
+
+				i {
+					padding: 0 10px;
+					color: $colorSecundario;
+					font-size: 25px;
+					transition: color;
+				}
+
+				i:hover {
+					color: $colorAmarillo;
+				}
+			}
+		}
+
+		#quotefooter {
+			p {
+				color: $colorSecundario;
+				font-family: $fuenteSecundaria;
+				text-align: right;
+				font-weight: inherit;
+				letter-spacing: 1px;
+				font-size: 35px;
+				animation-name: cambiar_color;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			@keyframes cambiar_color {
+				0% {
+					color: $colorPrincipal;
+				}
+
+				50% {
+					color: $colorAmarillo;
+				}
+
+				100% {
+					color: $colorNaranja;
+				}
+			}
+		}
+	} /*cierra contenedor*/
+} /*cierra footer*/

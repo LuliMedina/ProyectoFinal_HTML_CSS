@@ -1,0 +1,54 @@
+#contacto {
+	background-color: $colorFondo;
+	padding: 30px;
+
+	.contenedor {
+		border-top: 2px solid $colorAmarillo;
+		border-bottom: 2px solid $colorAmarillo;
+		padding: 40px;
+	}
+	p {
+		color: $colorSecundario;
+		font-family: $fuentePrincipal;
+		line-height: $altoLineaParrafos;
+		text-align: center;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	form {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 0 0 0;
+
+		input {
+			padding: 10px;
+			margin: 0 10px;
+			border: none;
+			border-bottom: 1px solid $colorPrincipal;
+			background: none;
+			font-size: 11px;
+			color: $colorSecundario;
+			resize: none;
+			outline: none;
+
+			&[type="submit"] {
+				border: 2px solid $colorPrincipal;
+				font-family: $fuenteSecundaria;
+				font-weight: inherit;
+				letter-spacing: 1px;
+				color: $colorSecundario;
+				font-size: 12px;
+				transition: background;
+				transition: color;
+			}
+			&[type="submit"]:hover {
+				background: $colorPrincipal;
+				color: $colorFondo;
+			}
+		}
+	}
+}
