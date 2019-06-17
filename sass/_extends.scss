@@ -24,3 +24,23 @@
 	border: 2px solid $colorAmarillo;
 	padding: 10px 15px;
 }
+
+%hpaginas {
+	text-align: center;
+	font-family: $fuenteSecundaria;
+	font-size: 50px;
+	font-weight: inherit;
+	letter-spacing: 2px;
+	border-right: 2px solid;
+	padding: 15px 40px 15px 0;
+}
+
+%ppaginas {
+	color: $colorSecundario;
+	font-family: $fuentePrincipal;
+	line-height: $altoLineaParrafos;
+	text-align: left;
+	font-size: 13px;
+	padding-right: 40px;
+	padding-top: 10px;
+}

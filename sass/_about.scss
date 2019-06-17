@@ -1,0 +1,49 @@
+#textoabout {
+	background-color: $colorFondo;
+	.contenedor {
+		display: -ms-grid;
+		display: flex;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+		padding: 70px 0 50px;
+		align-items: center;
+
+		h3 {
+			@extend %hpaginas;
+			color: $colorNaranja;
+			border-right-color: $colorNaranja;
+		}
+
+		p {
+			@extend %ppaginas;
+		}
+	}
+}
+
+#videoabout {
+	background-color: $colorFondo;
+
+	.contenedor {
+		padding: 40px 70px 60px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+#flechaabout {
+	background-color: $colorFondo;
+
+	.contenedor {
+		h3 {
+			text-align: center;
+			padding: 15px 0;
+
+			i {
+				font-size: 40px;
+				color: $colorNaranja;
+			}
+		}
+	}
+}

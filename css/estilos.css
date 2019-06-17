@@ -22,6 +22,24 @@
   border: 2px solid #f6bb61;
   padding: 10px 15px; }
 
+#textoabout .contenedor h3, #spotify .contenedor h3 {
+  text-align: center;
+  font-family: "Subway-Black";
+  font-size: 50px;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  border-right: 2px solid;
+  padding: 15px 40px 15px 0; }
+
+#textoabout .contenedor p {
+  color: #434343;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 150%;
+  text-align: left;
+  font-size: 13px;
+  padding-right: 40px;
+  padding-top: 10px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -255,3 +273,149 @@ footer {
       padding: 10px 0; }
 
 /*cierra footer*/
+#textoabout {
+  background-color: #eecfc9; }
+  #textoabout .contenedor {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 70px 0 50px;
+    align-items: center; }
+    #textoabout .contenedor h3 {
+      color: #fd442c;
+      border-right-color: #fd442c; }
+
+#videoabout {
+  background-color: #eecfc9; }
+  #videoabout .contenedor {
+    padding: 40px 70px 60px;
+    display: flex;
+    justify-content: center; }
+
+#flechaabout {
+  background-color: #eecfc9; }
+  #flechaabout .contenedor h3 {
+    text-align: center;
+    padding: 15px 0; }
+    #flechaabout .contenedor h3 i {
+      font-size: 40px;
+      color: #fd442c; }
+
+#shows {
+  background-color: #eecfc9; }
+  #shows .contenedor ul {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 70px 20px;
+    justify-content: center;
+    align-items: center; }
+    #shows .contenedor ul li {
+      border: 2px solid #d2564c;
+      text-align: center;
+      padding: 30px 0; }
+      #shows .contenedor ul li p {
+        color: #434343;
+        font-family: "Noto Sans", sans-serif;
+        line-height: 150%;
+        font-weight: bold;
+        font-size: 12px; }
+      #shows .contenedor ul li h4 {
+        font-family: "Subway-Black";
+        color: #d2564c;
+        font-size: 16px;
+        font-weight: inherit;
+        letter-spacing: 1px;
+        line-height: 200%; }
+      #shows .contenedor ul li a {
+        display: inline-block;
+        font-family: "Noto Sans", sans-serif;
+        color: #f6bb61;
+        font-weight: bold;
+        border: 2px solid #f6bb61;
+        padding: 10px 20px;
+        margin-top: 20px;
+        transition: background;
+        transition: color; }
+      #shows .contenedor ul li a:hover {
+        background: #f6bb61;
+        color: #eecfc9; }
+
+#botonmore {
+  background-color: #eecfc9; }
+  #botonmore .contenedor {
+    margin: auto;
+    display: flex;
+    justify-content: center; }
+    #botonmore .contenedor a {
+      font-family: "Subway-Black";
+      letter-spacing: 1px;
+      color: #434343;
+      font-size: 16px;
+      padding: 10px;
+      transition: border;
+      transition: color; }
+    #botonmore .contenedor a:hover {
+      border-bottom: 2px dotted #d2564c; }
+
+#albums {
+  background-color: #eecfc9; }
+  #albums .contenedor ul {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px 0px;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center; }
+    #albums .contenedor ul li {
+      text-align: center; }
+      #albums .contenedor ul li img {
+        filter: grayscale(1);
+        transition: filter 0.5s; }
+      #albums .contenedor ul li img:hover {
+        filter: grayscale(0); }
+      #albums .contenedor ul li h4 {
+        font-family: "Subway-Black";
+        color: #d2564c;
+        font-size: 20px;
+        font-weight: inherit;
+        letter-spacing: 1px;
+        line-height: 150%; }
+      #albums .contenedor ul li a {
+        display: inline-block;
+        font-family: "Noto Sans", sans-serif;
+        color: #f6bb61;
+        font-weight: bold;
+        border: 2px solid #f6bb61;
+        padding: 10px 20px;
+        margin-top: 10px;
+        transition: background;
+        transition: color; }
+      #albums .contenedor ul li a:hover {
+        background: #f6bb61;
+        color: #eecfc9; }
+
+#spotify {
+  background-color: #eecfc9; }
+  #spotify .contenedor {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 70px 0 50px;
+    align-items: center;
+    justify-items: center; }
+    #spotify .contenedor h3 {
+      color: #f6bb61;
+      border-right-color: #f6bb61; }

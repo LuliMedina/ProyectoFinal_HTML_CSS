@@ -1,0 +1,74 @@
+#albums {
+	background-color: $colorFondo;
+	.contenedor {
+		ul {
+			display: -ms-grid;
+			display: flex;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 20px 0px;
+			padding: 30px 20px;
+			justify-content: center;
+			align-items: center;
+
+			li {
+				text-align: center;
+				img {
+					filter: grayscale(1);
+					transition: filter 0.5s;
+				}
+
+				img:hover {
+					filter: grayscale(0);
+				}
+
+				h4 {
+					font-family: $fuenteSecundaria;
+					color: $colorPrincipal;
+					font-size: 20px;
+					font-weight: inherit;
+					letter-spacing: 1px;
+					line-height: $altoLineaParrafos;
+				}
+
+				a {
+					display: inline-block;
+					font-family: $fuentePrincipal;
+					color: $colorAmarillo;
+					font-weight: bold;
+					border: 2px solid $colorAmarillo;
+					padding: 10px 20px;
+					margin-top: 10px;
+					transition: background;
+					transition: color;
+				}
+				a:hover {
+					background: $colorAmarillo;
+					color: $colorFondo;
+				}
+			}
+		}
+	}
+}
+
+#spotify {
+	background-color: $colorFondo;
+	.contenedor {
+		display: -ms-grid;
+		display: flex;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+		padding: 70px 0 50px;
+		align-items: center;
+		justify-items: center;
+
+		h3 {
+			@extend %hpaginas;
+			color: $colorAmarillo;
+			border-right-color: $colorAmarillo;
+		}
+	}
+}
