@@ -1,79 +1,92 @@
 #seccionAbout {
 	background-color: $colorFondo;
-	padding: 120px 0;
-	overflow: auto;
+	.contenedor {
+		display: -ms-grid;
+		display: flex;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 4fr 3fr;
+		grid-gap: 40px;
+		padding: 100px 0px;
+		align-items: center;
 
-	h3 {
-		@extend %h3;
-		color: $colorAmarillo;
-		padding-top: 70px;
-	}
+		h3 {
+			@extend %h3;
+			color: $colorAmarillo;
+			padding-top: 70px;
+		}
 
-	p {
-		@extend %p;
-	}
+		p {
+			@extend %p;
+			padding-left: 90px;
+		}
 
-	img {
-		float: right;
-		margin: 0 130px 0 20px;
-		transition: all 1s;
-	}
+		a {
+			@extend %boton;
+			transition: background;
+			transition: color;
+			text-align: right;
+		}
 
-	img:hover {
-		filter: opacity(0.8);
-	}
+		a:hover {
+			background: $colorAmarillo;
+			color: $colorFondo;
+		}
 
-	.boton {
-		@extend %boton;
-		margin: 30px 0 0 360px;
-		transition: background;
-		transition: color;
-	}
+		img {
+			transition: all 1s;
+		}
 
-	.boton:hover {
-		background: $colorAmarillo;
-		color: $colorFondo;
+		img:hover {
+			filter: opacity(0.8);
+		}
 	}
 }
 
 #seccionMusic {
 	background-color: $colorFondo;
-	overflow: auto;
-	padding: 0 0 30px 0;
+	.contenedor {
+		display: -ms-grid;
+		display: flex;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 3fr 4fr;
+		grid-gap: 40px;
+		padding: 20px 0px;
+		align-items: center;
 
-	h3 {
-		@extend %h3;
-		color: $colorNaranja;
-		padding-top: 70px;
-		text-align: left;
-	}
+		img {
+			transition: all 1s;
+		}
 
-	p {
-		@extend %p;
-		text-align: left;
-	}
+		img:hover {
+			filter: opacity(0.8);
+		}
 
-	img {
-		float: left;
-		margin-right: 20px;
-		transition: all 1s;
-	}
+		h3 {
+			@extend %h3;
+			color: $colorNaranja;
+			padding-top: 70px;
+			text-align: left;
+		}
 
-	img:hover {
-		filter: opacity(0.8);
-	}
+		p {
+			@extend %p;
+			text-align: left;
+		}
 
-	.boton {
-		@extend %boton;
-		border: 2px solid $colorNaranja;
-		padding: 10px 25px;
-		transition: background;
-		transition: color;
-	}
+		.boton {
+			@extend %boton;
+			border: 2px solid $colorNaranja;
+			padding: 10px 25px;
+			transition: background;
+			transition: color;
+		}
 
-	.boton:hover {
-		background: $colorNaranja;
-		color: $colorFondo;
+		.boton:hover {
+			background: $colorNaranja;
+			color: $colorFondo;
+		}
 	}
 }
 
@@ -100,5 +113,77 @@
 		text-align: center;
 		font-size: 20px;
 		letter-spacing: 2px;
+	}
+}
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	#seccionAbout {
+		.contenedor {
+			grid-template-columns: 1fr;
+			grid-template-rows: 2fr;
+			grid-gap: 10px;
+			padding-bottom: 30px;
+
+			.v1 {
+				order: 0;
+				h3 {
+					padding-top: 0px;
+					text-align: center;
+					font-size: 40px;
+				}
+
+				p {
+					padding: 0px 10px;
+					text-align: center;
+				}
+			}
+
+			.v2 {
+				order: -1;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	#seccionMusic {
+		.contenedor {
+			grid-template-columns: 1fr;
+			grid-template-rows: 2fr;
+			grid-gap: 10px;
+			padding-bottom: 30px;
+
+			img {
+				width: 100%;
+			}
+
+			h3 {
+				padding-top: 0px;
+				text-align: center;
+				font-size: 40px;
+			}
+
+			p {
+				padding-left: 0px;
+				text-align: center;
+			}
+		}
+	}
+
+	#seccionFrase {
+		padding: 50px 10px;
+		p {
+			font-size: 20px;
+
+			span {
+				font-size: 20px;
+			}
+		}
+		h4 {
+			font-size: 15px;
+		}
 	}
 }

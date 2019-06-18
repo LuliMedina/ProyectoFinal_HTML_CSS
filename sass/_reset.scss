@@ -22,3 +22,9 @@
 		url("css/typo/Subway-Black.woff") format("woff"),
 		url("css/typo/Subway-Black.svg") format("svg");
 }
+
+@media screen and (max-width: 769px) {
+	* {
+		background-color: $colorFondo;
+	}
+}

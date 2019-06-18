@@ -54,6 +54,7 @@ footer {
 				font-weight: inherit;
 				letter-spacing: 1px;
 				font-size: 35px;
+				line-height: 100%;
 				animation-name: cambiar_color;
 				animation-duration: 5s;
 				animation-iteration-count: infinite;
@@ -84,3 +85,24 @@ footer {
 		}
 	} /*cierra contenedor*/
 } /*cierra footer*/
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	footer {
+		.contenedor {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
+
+			#paginas {
+				margin: auto;
+			}
+
+			#quotefooter {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

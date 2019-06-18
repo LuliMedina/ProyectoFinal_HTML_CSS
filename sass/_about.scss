@@ -43,7 +43,60 @@
 			i {
 				font-size: 40px;
 				color: $colorNaranja;
+				animation-name: cambiar_color;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
 			}
+			@keyframes cambiar_color {
+				0% {
+					color: $colorPrincipal;
+				}
+
+				50% {
+					color: $colorAmarillo;
+				}
+
+				100% {
+					color: $colorNaranja;
+				}
+			}
+		}
+	}
+}
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	#textoabout {
+		.contenedor {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 3fr;
+			grid-gap: 0px;
+			padding: 10px 0;
+
+			h3 {
+				font-size: 50px;
+				border-right: none;
+				border-bottom: 2px solid;
+				padding: 0 0 10px 0;
+			}
+
+			p {
+				text-align: center;
+				font-size: 13px;
+				padding-right: 0px;
+				padding-top: 0px;
+			}
+		}
+	}
+
+	#videoabout {
+		background-color: $colorFondo;
+
+		.contenedor {
+			padding: 10px;
+			width: 100%;
 		}
 	}
 }

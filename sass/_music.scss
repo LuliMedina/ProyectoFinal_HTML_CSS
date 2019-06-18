@@ -72,3 +72,43 @@
 		}
 	}
 }
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	#albums {
+		.contenedor {
+			ul {
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(4, 1fr);
+				grid-gap: 20px 0px;
+				padding: 30px 10px;
+
+				li {
+					img {
+						filter: grayscale(0);
+						transition: none;
+					}
+
+					a {
+						transition: none;
+						transition: none;
+					}
+				}
+			}
+		}
+	}
+
+	#spotify {
+		.contenedor {
+			grid-template-columns: 1fr;
+
+			h3 {
+				font-size: 40px;
+				border-right: none;
+				border-bottom: 2px solid;
+				padding: 15px 0;
+			}
+		}
+	}
+}

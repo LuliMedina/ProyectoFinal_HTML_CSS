@@ -3,9 +3,7 @@ header {
 	h1 {
 		display: inline-block;
 		position: fixed;
-		width: 20px;
 		z-index: 4;
-		display: block;
 	}
 	.nav {
 		display: flex;
@@ -30,6 +28,32 @@ header {
 
 			a:hover {
 				color: $colorAmarillo;
+			}
+		}
+	}
+}
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	header {
+		h1 {
+			display: block;
+			position: static;
+			text-align: center;
+			padding: 10px;
+		}
+		.nav {
+			align-items: center;
+			padding-top: 10px;
+
+			li {
+				padding: 10px 0px;
+
+				a {
+					padding: 0 20px;
+					transition: none;
+				}
 			}
 		}
 	}

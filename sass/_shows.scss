@@ -57,7 +57,6 @@
 #botonmore {
 	background-color: $colorFondo;
 	.contenedor {
-		margin: auto;
 		display: flex;
 		justify-content: center;
 
@@ -72,6 +71,18 @@
 		}
 		a:hover {
 			border-bottom: 2px dotted $colorPrincipal;
+		}
+	}
+}
+
+/* ------- */
+
+@media screen and (max-width: 769px) {
+	#shows {
+		.contenedor {
+			ul {
+				grid-template-columns: 1fr;
+			}
 		}
 	}
 }

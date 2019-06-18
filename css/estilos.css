@@ -1,4 +1,4 @@
-#seccionAbout h3, #seccionMusic h3 {
+#seccionAbout .contenedor h3, #seccionMusic .contenedor h3 {
   margin-bottom: 20px;
   text-align: right;
   font-family: "Subway-Black";
@@ -6,16 +6,15 @@
   font-weight: inherit;
   letter-spacing: 2px; }
 
-#seccionAbout p, #seccionMusic p {
+#seccionAbout .contenedor p, #seccionMusic .contenedor p {
   margin-bottom: 40px;
   color: #434343;
   font-family: "Noto Sans", sans-serif;
   line-height: 150%;
   text-align: right;
-  font-size: 13px;
-  margin-left: 110px; }
+  font-size: 13px; }
 
-#seccionAbout .boton, #seccionMusic .boton {
+#seccionAbout .contenedor a, #seccionMusic .contenedor .boton {
   font-family: "Noto Sans", sans-serif;
   color: #434343;
   font-weight: bold;
@@ -59,14 +58,16 @@
   font-style: normal;
   src: local("Subway-Black"), url("css/typo/Subway-Black.eot") format("embedded-opentype"), url("css/typo/Subway-Black.woff") format("woff"), url("css/typo/Subway-Black.svg") format("svg"); }
 
+@media screen and (max-width: 769px) {
+  * {
+    background-color: #eecfc9; } }
+
 header {
   background-color: #eecfc9; }
   header h1 {
     display: inline-block;
     position: fixed;
-    width: 20px;
-    z-index: 4;
-    display: block; }
+    z-index: 4; }
   header .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -87,62 +88,104 @@ header {
       header .nav li a:hover {
         color: #f6bb61; }
 
-#quote {
-  background-color: #eecfc9; }
-  #quote h2 {
+/* ------- */
+@media screen and (max-width: 769px) {
+  header h1 {
+    display: block;
+    position: static;
     text-align: center;
-    font-family: "Subway-Black";
-    font-size: 80px;
-    color: #d2564c;
-    padding: 160px 0px 160px 0px;
-    font-weight: inherit;
-    letter-spacing: 2px; }
+    padding: 10px; }
+  header .nav {
+    align-items: center;
+    padding-top: 10px; }
+    header .nav li {
+      padding: 10px 0px; }
+      header .nav li a {
+        padding: 0 20px;
+        transition: none; } }
 
+/*
+#quote {
+	background-color: $colorFondo;
+	h2 {
+		text-align: center;
+		font-family: $fuenteSecundaria;
+		font-size: $tamanioQuotes;
+		color: $colorPrincipal;
+		padding: 160px 0px;
+		font-weight: inherit;
+		letter-spacing: 2px;
+	}
+}
+
+-------
+
+@media screen and (max-width: 769px) {
+	#quote {
+		h2 {
+			font-size: 50px;
+			padding: 100px 0px 50px;
+		}
+	}
+}
+*/
 #seccionAbout {
-  background-color: #eecfc9;
-  padding: 120px 0;
-  overflow: auto; }
-  #seccionAbout h3 {
-    color: #f6bb61;
-    padding-top: 70px; }
-  #seccionAbout img {
-    float: right;
-    margin: 0 130px 0 20px;
-    transition: all 1s; }
-  #seccionAbout img:hover {
-    filter: opacity(0.8); }
-  #seccionAbout .boton {
-    margin: 30px 0 0 360px;
-    transition: background;
-    transition: color; }
-  #seccionAbout .boton:hover {
-    background: #f6bb61;
-    color: #eecfc9; }
+  background-color: #eecfc9; }
+  #seccionAbout .contenedor {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 4fr 3fr;
+    grid-gap: 40px;
+    padding: 100px 0px;
+    align-items: center; }
+    #seccionAbout .contenedor h3 {
+      color: #f6bb61;
+      padding-top: 70px; }
+    #seccionAbout .contenedor p {
+      padding-left: 90px; }
+    #seccionAbout .contenedor a {
+      transition: background;
+      transition: color;
+      text-align: right; }
+    #seccionAbout .contenedor a:hover {
+      background: #f6bb61;
+      color: #eecfc9; }
+    #seccionAbout .contenedor img {
+      transition: all 1s; }
+    #seccionAbout .contenedor img:hover {
+      filter: opacity(0.8); }
 
 #seccionMusic {
-  background-color: #eecfc9;
-  overflow: auto;
-  padding: 0 0 30px 0; }
-  #seccionMusic h3 {
-    color: #fd442c;
-    padding-top: 70px;
-    text-align: left; }
-  #seccionMusic p {
-    text-align: left; }
-  #seccionMusic img {
-    float: left;
-    margin-right: 20px;
-    transition: all 1s; }
-  #seccionMusic img:hover {
-    filter: opacity(0.8); }
-  #seccionMusic .boton {
-    border: 2px solid #fd442c;
-    padding: 10px 25px;
-    transition: background;
-    transition: color; }
-  #seccionMusic .boton:hover {
-    background: #fd442c;
-    color: #eecfc9; }
+  background-color: #eecfc9; }
+  #seccionMusic .contenedor {
+    display: -ms-grid;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 40px;
+    padding: 20px 0px;
+    align-items: center; }
+    #seccionMusic .contenedor img {
+      transition: all 1s; }
+    #seccionMusic .contenedor img:hover {
+      filter: opacity(0.8); }
+    #seccionMusic .contenedor h3 {
+      color: #fd442c;
+      padding-top: 70px;
+      text-align: left; }
+    #seccionMusic .contenedor p {
+      text-align: left; }
+    #seccionMusic .contenedor .boton {
+      border: 2px solid #fd442c;
+      padding: 10px 25px;
+      transition: background;
+      transition: color; }
+    #seccionMusic .contenedor .boton:hover {
+      background: #fd442c;
+      color: #eecfc9; }
 
 #seccionFrase {
   background-color: #eecfc9;
@@ -164,6 +207,49 @@ header {
     text-align: center;
     font-size: 20px;
     letter-spacing: 2px; }
+
+/* ------- */
+@media screen and (max-width: 769px) {
+  #seccionAbout .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 10px;
+    padding-bottom: 30px; }
+    #seccionAbout .contenedor .v1 {
+      order: 0; }
+      #seccionAbout .contenedor .v1 h3 {
+        padding-top: 0px;
+        text-align: center;
+        font-size: 40px; }
+      #seccionAbout .contenedor .v1 p {
+        padding: 0px 10px;
+        text-align: center; }
+    #seccionAbout .contenedor .v2 {
+      order: -1; }
+      #seccionAbout .contenedor .v2 img {
+        width: 100%; }
+  #seccionMusic .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 10px;
+    padding-bottom: 30px; }
+    #seccionMusic .contenedor img {
+      width: 100%; }
+    #seccionMusic .contenedor h3 {
+      padding-top: 0px;
+      text-align: center;
+      font-size: 40px; }
+    #seccionMusic .contenedor p {
+      padding-left: 0px;
+      text-align: center; }
+  #seccionFrase {
+    padding: 50px 10px; }
+    #seccionFrase p {
+      font-size: 20px; }
+      #seccionFrase p span {
+        font-size: 20px; }
+    #seccionFrase h4 {
+      font-size: 15px; } }
 
 #contacto {
   background-color: #eecfc9;
@@ -209,6 +295,17 @@ header {
         background: #d2564c;
         color: #eecfc9; }
 
+@media screen and (max-width: 769px) {
+  #contacto {
+    padding: 0px; }
+    #contacto .contenedor {
+      padding: 40px 0; }
+    #contacto form {
+      display: block; }
+      #contacto form input {
+        padding: 10px;
+        margin: 20px; } }
+
 footer {
   background-color: #eecfc9;
   /*cierra contenedor*/ }
@@ -252,6 +349,7 @@ footer {
       font-weight: inherit;
       letter-spacing: 1px;
       font-size: 35px;
+      line-height: 100%;
       animation-name: cambiar_color;
       animation-duration: 5s;
       animation-iteration-count: infinite;
@@ -273,6 +371,16 @@ footer {
       padding: 10px 0; }
 
 /*cierra footer*/
+/* ------- */
+@media screen and (max-width: 769px) {
+  footer .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+    footer .contenedor #paginas {
+      margin: auto; }
+    footer .contenedor #quotefooter p {
+      text-align: center; } }
+
 #textoabout {
   background-color: #eecfc9; }
   #textoabout .contenedor {
@@ -302,7 +410,42 @@ footer {
     padding: 15px 0; }
     #flechaabout .contenedor h3 i {
       font-size: 40px;
-      color: #fd442c; }
+      color: #fd442c;
+      animation-name: cambiar_color;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes cambiar_color {
+  0% {
+    color: #d2564c; }
+  50% {
+    color: #f6bb61; }
+  100% {
+    color: #fd442c; } }
+
+/* ------- */
+@media screen and (max-width: 769px) {
+  #textoabout .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 0px;
+    padding: 10px 0; }
+    #textoabout .contenedor h3 {
+      font-size: 50px;
+      border-right: none;
+      border-bottom: 2px solid;
+      padding: 0 0 10px 0; }
+    #textoabout .contenedor p {
+      text-align: center;
+      font-size: 13px;
+      padding-right: 0px;
+      padding-top: 0px; }
+  #videoabout {
+    background-color: #eecfc9; }
+    #videoabout .contenedor {
+      padding: 10px;
+      width: 100%; } }
 
 #shows {
   background-color: #eecfc9; }
@@ -350,7 +493,6 @@ footer {
 #botonmore {
   background-color: #eecfc9; }
   #botonmore .contenedor {
-    margin: auto;
     display: flex;
     justify-content: center; }
     #botonmore .contenedor a {
@@ -363,6 +505,11 @@ footer {
       transition: color; }
     #botonmore .contenedor a:hover {
       border-bottom: 2px dotted #d2564c; }
+
+/* ------- */
+@media screen and (max-width: 769px) {
+  #shows .contenedor ul {
+    grid-template-columns: 1fr; } }
 
 #albums {
   background-color: #eecfc9; }
@@ -419,3 +566,24 @@ footer {
     #spotify .contenedor h3 {
       color: #f6bb61;
       border-right-color: #f6bb61; }
+
+/* ------- */
+@media screen and (max-width: 769px) {
+  #albums .contenedor ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px 0px;
+    padding: 30px 10px; }
+    #albums .contenedor ul li img {
+      filter: grayscale(0);
+      transition: none; }
+    #albums .contenedor ul li a {
+      transition: none;
+      transition: none; }
+  #spotify .contenedor {
+    grid-template-columns: 1fr; }
+    #spotify .contenedor h3 {
+      font-size: 40px;
+      border-right: none;
+      border-bottom: 2px solid;
+      padding: 15px 0; } }
